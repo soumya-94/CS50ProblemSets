@@ -13,29 +13,24 @@ public class PatternCS50Mario {
             n = scanner.nextInt();
 
             if(n>0 && n<9)
-            {
-                for (int i = 1; i<=n; i++)
-                {
-                    for (int j = n; j>i; j--)
-                    {
-                        System.out.print(" ");
-                    }
-                    for (int k = 1; k <=i ; k++)
-                    {
-                        System.out.print("#");
-                    }
-                    System.out.print("  ");
-                    for (int k = 1; k <=i ; k++)
-                    {
-                        System.out.print("#");
-                    }
-                    System.out.println();
-                }
-
                 break;
-            }
             else continue;
+
         } while (true) ;
+
+    for (int i = 1; i<=n; i++) {
+        for (int j = n; j > i; j--) {
+            System.out.print(" ");
+        }
+        for (int k = 1; k <= i; k++) {
+            System.out.print("#");
+        }
+        System.out.print("  ");
+        for (int k = 1; k <= i; k++) {
+            System.out.print("#");
+        }
+        System.out.println();
+    }
 
         scanner.close();
     }
